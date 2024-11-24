@@ -15,7 +15,7 @@ jobs:
 
       - name: Tar build files
         run: |
-          tar -czvf index.html styles.css
+          tar -czvf build-files.tar.gz index.html styles.css
 
       - name: Copy files to server
         uses: appleboy/scp-action@v0.1.4
