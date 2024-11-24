@@ -26,7 +26,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "build-files.tar.gz"
           target: /tmp
-          debug: true
 
       - name: Extract and deploy files
         uses: appleboy/ssh-action@master
